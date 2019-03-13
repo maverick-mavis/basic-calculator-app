@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Basic Calculator</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container col-sm-7 col-md-4 col-lg-4">
+			<form id="calcForm">
+				<h2 id="header">Basic Calculator</h2><br>
+				<div class="form-group">
+					<label for="fNum">First number:</label>
+					<input type="text" class="form-control" id="fNum" name="fNum" placeholder="Enter first number">
+				</div>
+				<div class="form-group">
+					<label for="sNum">Second number:</label>
+					<input type="text" class="form-control" id="sNum" name="sNum" placeholder="Enter second number">
+				</div>
+				<div class="btn-group">
+					<input type="button" class="btn btn-primary" id="add-btn" value="+" onclick="add()">
+				</div>
+				<div class="btn-group">
+					<input type="button" class="btn btn-primary" id="subtract-btn" value="-" onclick="subtract()">
+				</div>
+				<div class="btn-group">
+					<input type="button" class="btn btn-primary" id="multiply-btn" value="*" onclick="multiply()">
+				</div>
+				<div class="btn-group">
+					<input type="button" class="btn btn-primary" id="divide-btn" value="/" onclick="divide()">
+				</div>
+				<div class="btn-group">
+					<input type="reset" class="btn btn-danger" id="reset-btn" value="Reset" onclick="document.getElementById('calcForm').reset()">
+				</div>
+			</form><br>
+			<h3>Result:
+				<span id="result">0</span>
+			</h3>
+		</div>
+		<script type="text/javascript" src=js/main.js></script>
+	</body>
